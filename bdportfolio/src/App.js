@@ -1,7 +1,7 @@
 import './App.css';
-import { ThemeProvider, Typography, Button, Card, Container, CardContent, Divider, Grid} from '@mui/material';
+import { ThemeProvider, Typography, Button, Card, CardContent, Divider, Grid} from '@mui/material';
 import theme from './components/theme.js'
-import { SkillsBox, BackExperienceBox } from './components/layoutComponents';
+import { SkillsBox, BackExperienceBox, PictureBox } from './components/layoutComponents';
 
 function App() {
   return (
@@ -22,7 +22,9 @@ function App() {
           <Grid item spacing={3}>
             <SkillsBox />
           </Grid>
-          <Grid xs={4} />
+          <Grid xs={4} >
+            <PictureBox/>
+          </Grid>
           <Grid xs={6} />
           <Grid item spacing={3}>
             <BackExperienceBox />
